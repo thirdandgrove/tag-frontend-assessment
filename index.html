@@ -7,12 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style type="text/css">
       body {
+        margin: 0;
+        color: rgb(41, 41, 42);
         font-family: 'Open Sans', sans-serif;
       }
 
       main {
         margin: auto;
-        max-width: 950px;
+        max-width: 980px;
+      }
+
+      header, footer {
+        background-color: rgb(235, 200, 0);
+        padding: 3.125rem 0;
+      }
+
+      footer {
+        margin-top: 2rem;
       }
 
       h1 {
@@ -20,31 +31,47 @@
       }
 
       div {
-        padding: 20px;
+        padding: 1.2rem;
       }
 
       ul, ol {
-        margin-bottom: 10px;
+        margin-bottom: .8rem;
       }
 
       ul li {
         list-style: none;
       }
 
-      img {
-        display: block;
-        margin: 50px auto 0;
+      hr {
+        color: rgba(41, 41, 42, 0.7);
       }
+
+      a {
+        color: rgba(41, 41, 42, 0.7);
+        text-decoration: underline;
+        transition: all 0.3s ease 0s;
+      }
+
+      a:hover,
+      a:focus {
+        color: rgb(41, 41, 42);
+      }
+
+      img.logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 20rem;
+      }
+
     </style>
   </head>
   <body>
+    <header>
+      <img src="tag.svg" title="Third &amp; Grove logo" alt="Third &amp; Grove logo" class="logo" />
+    </header>
     <main>
       <div>
-        <img src="tag.png" title="Third &amp; Grove logo" alt="Third &amp; Grove logo" />
-        <h1>TAG Frontend Developer Assessment</h1>
-      </div>
-
-      <div>
+        <h1>Frontend Developer Assessment</h1>
         Thanks for taking our programming assessment! You have 24 hours to complete from the time it was sent to you.
         To ensure our hiring process remains fair please do not share the URL to this challenge, any details of the challenge, or your solution publicly.
         Thanks!
@@ -60,11 +87,12 @@
         <p><b>Assets:</b> <a href="Expandable.sketch">Sketch file</a> & reference <a href="Expandable.png">png</a>.</p>
 
         <ol>
-          <li>Fetch dummy data from https://randomuser.me/ or seed own data</li>
+          <li>Fetch dummy data from <a href="https://randomuser.me/">https://randomuser.me/</a> or seed own data.</li>
           <li>Build HTML with a response from randomuser.me and render.</li>
-          <li>Use SASS & BEM build out the responsive UI in the attached mockup.</li>
+          <li>Use SASS & BEM to build out the responsive UI in the attached mockup.</li>
           <li>Use JS to enable the accordion.</li>
-          <li>The challenge typical takes 2-5 hours.</li>
+          <li>The challenge typically takes 2-4 hours.</li>
+          <li><strong>Extra credit:</strong> Build the UI using <a href="https://reactjs.org/">React</a>.</li>
         </ol>
 
         <h4>Assessment Deliverables:</h4>
@@ -79,7 +107,7 @@
     </main>
 
     <footer>
-      <img src="tag.png" title="Third &amp; Grove logo" alt="Third &amp; Grove logo" />
+      <img src="tag.svg" title="Third &amp; Grove logo" alt="Third &amp; Grove logo" class="logo" />
     </footer>
   </body>
 </html>
